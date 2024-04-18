@@ -6,12 +6,12 @@ import apolloClient from '../lib/apollo';
 
 function MyApp({ Component, pageProps }:AppProps) {
   return (
-    <ApolloProvider client={apolloClient}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+    <ApolloProvider>
+      
     </ApolloProvider>
-    
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   );
 }
 

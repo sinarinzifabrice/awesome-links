@@ -6,7 +6,7 @@ import apolloClient from '../lib/apollo';
 
 function MyApp({ Component, pageProps }:AppProps) {
   return (
-    <ApolloProvider client={apolloClient}>
+    <ApolloProvider>
       <Layout>
         <Component {...pageProps} />
       </Layout>
